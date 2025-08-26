@@ -1,0 +1,21 @@
+{
+  "manifest_version": 3,
+  "name": "Tradutor Meet",
+  "version": "1.0",
+  "description": "Tradução em tempo real para o Google Meet",
+  "permissions": [
+    "activeTab",
+    "storage",
+    "tabs",
+    "scripting"
+  ],
+  "host_permissions": [
+    "*://meet.google.com/*"
+  ],
+  "action": {
+    "default_popup": "popup.html"
+  },
+  "background": {
+    "service_worker": "background.js"
+  }
+}
